@@ -4,7 +4,8 @@ def file_watching
   puts "===================="
   system "clear"
   begin
-    load("./index.rb")
+    system("ruby index.rb")
+    # load("./index.rb")
   rescue SyntaxError => err
     puts err
     create_watcher()
